@@ -11,7 +11,6 @@
     Public Sub New()
 
     End Sub
-
     Public Property Year() As Integer
         Get
             Return m_year
@@ -20,7 +19,6 @@
 
         End Set
     End Property
-
     Public Property Make() As String
         Get
             Return m_make
@@ -37,7 +35,6 @@
 
         End Set
     End Property
-
     Public Property Color() As String
         Get
             Return m_color
@@ -46,7 +43,6 @@
 
         End Set
     End Property
-
     Public Property License() As String
         Get
             Return m_license
@@ -55,9 +51,6 @@
 
         End Set
     End Property
-
-
-
 
 End Class
 

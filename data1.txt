@@ -1,0 +1,16 @@
+﻿Andrea,Rose,McPherson,is,so ,cool
+Andrea,Rose,McPherson,is,so ,cool
+Andrea,Rose,McPherson,is,so ,cool
+System.String[]
+System.String[]
+System.String[]
+Andrea,Rose,McPherson,is,so ,cool
+Andrea,Rose,McPherson,is,so ,cool
+Andrea,Rose,McPherson,is,so ,cool
+
+2000,Ford,Focus, Blue, ABC123
+2000,Ford,Focus, Blue, ABC123
+2000,Ford,Focus, Blue, ABC123
+2000,Ford,Focus, Blue, ABC123
+2000,Ford,Focus, Blue, ABC123
+2000,Ford,Focus, Blue, ABC123
