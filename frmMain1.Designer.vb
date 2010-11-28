@@ -22,7 +22,6 @@ Partial Class frmParkingLot
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -33,19 +32,12 @@ Partial Class frmParkingLot
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnLoadDatabase = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
+        Me.txtCount = New System.Windows.Forms.TextBox()
+        Me.btnPreviousCar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(66, 28)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
@@ -127,23 +119,14 @@ Partial Class frmParkingLot
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Label5"
         '
-        'Button2
+        'btnLoadDatabase
         '
-        Me.Button2.Location = New System.Drawing.Point(460, 21)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 11
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(460, 94)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 12
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnLoadDatabase.Location = New System.Drawing.Point(406, 21)
+        Me.btnLoadDatabase.Name = "btnLoadDatabase"
+        Me.btnLoadDatabase.Size = New System.Drawing.Size(129, 23)
+        Me.btnLoadDatabase.TabIndex = 11
+        Me.btnLoadDatabase.Text = "Load Database"
+        Me.btnLoadDatabase.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -154,14 +137,41 @@ Partial Class frmParkingLot
         Me.Button4.Text = "Button4"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'btnNext
+        '
+        Me.btnNext.Location = New System.Drawing.Point(428, 238)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(132, 23)
+        Me.btnNext.TabIndex = 14
+        Me.btnNext.Text = "Next Car"
+        Me.btnNext.UseVisualStyleBackColor = True
+        '
+        'txtCount
+        '
+        Me.txtCount.Location = New System.Drawing.Point(460, 363)
+        Me.txtCount.Name = "txtCount"
+        Me.txtCount.Size = New System.Drawing.Size(100, 22)
+        Me.txtCount.TabIndex = 15
+        '
+        'btnPreviousCar
+        '
+        Me.btnPreviousCar.Location = New System.Drawing.Point(428, 275)
+        Me.btnPreviousCar.Name = "btnPreviousCar"
+        Me.btnPreviousCar.Size = New System.Drawing.Size(132, 23)
+        Me.btnPreviousCar.TabIndex = 16
+        Me.btnPreviousCar.Text = "Previous Car"
+        Me.btnPreviousCar.UseVisualStyleBackColor = True
+        '
         'frmParkingLot
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(581, 427)
+        Me.Controls.Add(Me.btnPreviousCar)
+        Me.Controls.Add(Me.txtCount)
+        Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnLoadDatabase)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -172,14 +182,12 @@ Partial Class frmParkingLot
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button1)
         Me.Name = "frmParkingLot"
         Me.Text = "Parking Lot"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
@@ -190,8 +198,10 @@ Partial Class frmParkingLot
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btnLoadDatabase As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents btnNext As System.Windows.Forms.Button
+    Friend WithEvents txtCount As System.Windows.Forms.TextBox
+    Friend WithEvents btnPreviousCar As System.Windows.Forms.Button
 
 End Class
